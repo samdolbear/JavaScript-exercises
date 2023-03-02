@@ -44,9 +44,18 @@
         // alert(userInputRestricted)
 
         // In less lines
-        alert(prompt("What's on your mind? ").slice(0, 50));
+        // alert(prompt("What's on your mind? ").slice(0, 50));
         // Exercise 4 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 5 START = Ask for name and return it in alert with only first letter capitalized
+        var name = prompt("What's your name? ");
+        lowerCaseName = name.toLowerCase();
+        firstLetter = lowerCaseName.slice(0, 1).toUpperCase();
+        restOfName = lowerCaseName.slice(1, 100);
 
+        alert("Hi " + firstLetter + restOfName);
+        
+        // Exercise 5 END
 
     </script>
   </body>
