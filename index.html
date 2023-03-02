@@ -51,7 +51,7 @@
         var name = prompt("What's your name? ");
         var lowerCaseName = name.toLowerCase();
         var firstLetter = lowerCaseName.slice(0, 1).toUpperCase();
-        var restOfName = lowerCaseName.slice(1, 100);
+        var restOfName = lowerCaseName.slice(1, name.length);
 
         alert("Hi " + firstLetter + restOfName);
         
