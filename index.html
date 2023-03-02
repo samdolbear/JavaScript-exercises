@@ -28,19 +28,22 @@
         // Exercise 2 END
 //-----------------------------------------------------------------------------------------------------------
         // Exercise 3 START = Return back to the user how many characters they wrote in the prompt
-        var userInput = prompt("What's on your mind? ");
+        // var userInput = prompt("What's on your mind? ");
         // totalLength = 240;
         // charLengthOfInput = userInput.length;
         // remainingLength = 240 - charLengthOfInput
         // alert("You used " + charLengthOfInput + " characters! You have " + remainingLength + " characters remaining!")
 
         // In less code
-        alert("You have written " + userInput.length + " characters, you've got " + (240 - userInput.length) + " characters remaining!")
-
-
+        // alert("You have written " + userInput.length + " characters, you've got " + (240 - userInput.length) + " characters remaining!")
         // Exercise 3 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 4 START = Use slice function to force 240 character limit on exercise 3
+        var userInput = prompt("What's on your mind? ");
+        userInputRestricted = userInput.slice(0, 50)
+        alert("You have written " + userInputRestricted.length + " characters, you've got " + (50 - userInputRestricted.length) + " characters remaining!")
 
-
+        // Exercise 4 END
 
 
     </script>
