@@ -48,15 +48,22 @@
         // Exercise 4 END
 //-----------------------------------------------------------------------------------------------------------
         // Exercise 5 START = Ask for name and return it in alert with only first letter capitalized
-        var name = prompt("What's your name? ");
-        var lowerCaseName = name.toLowerCase();
-        var firstLetter = lowerCaseName.slice(0, 1).toUpperCase();
-        var restOfName = lowerCaseName.slice(1, name.length);
+        // var name = prompt("What's your name? ");
+        // var lowerCaseName = name.toLowerCase();
+        // var firstLetter = lowerCaseName.slice(0, 1).toUpperCase();
+        // var restOfName = lowerCaseName.slice(1, name.length);
 
-        alert("Hi " + firstLetter + restOfName);
-        
+        // alert("Hi " + firstLetter + restOfName);   
         // Exercise 5 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 6 START = Calculate human age of dogs
+        // prompt user for age of dog
+        // convert the dog age to human age
+        // alert the answer
 
+        var dogAge = prompt("How old is your dog? ");
+        var humanAge = ((dogAge - 2) * 4) + 21; 
+        alert("The human age of your dog is " + humanAge + "!");
     </script>
   </body>
 </html>
