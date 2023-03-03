@@ -7,15 +7,15 @@
   <body>
     <script>
         // Exercise 1 START = Swap the values 
-            var a = "3";
-            var b = "8";
+        //     var a = "3";
+        //     var b = "8";
 
-            var c = a;
-            a = b;
-            b = c;
+        //     var c = a;
+        //     a = b;
+        //     b = c;
 
-            console.log("a is " + a);
-            console.log("b is " + b);
+        //     console.log("a is " + a);
+        //     console.log("b is " + b);
         // Exercise 1 END
 //-----------------------------------------------------------------------------------------------------------
         // Exercise 2 START = String Concatenation
@@ -61,9 +61,28 @@
         // convert the dog age to human age
         // alert the answer
 
-        var dogAge = prompt("How old is your dog? ");
-        var humanAge = ((dogAge - 2) * 4) + 21; 
-        alert("The human age of your dog is " + humanAge + "!");
+        // var dogAge = prompt("How old is your dog? ");
+        // var humanAge = ((dogAge - 2) * 4) + 21; 
+        // alert("The human age of your dog is " + humanAge + "!");
+        // Exercise 6 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 7 START = Life in Weeks Coding Exercise
+        // ask age and store value
+        function lifeLeft(age){
+                // Retuen daysm, weeks and months left assuming 90 year life span and 365 days in year.
+                var lifeSpan = 90 - age;
+                var remainginLifeInMonths = lifeSpan * 12;
+                var remainginLifeInweeks = lifeSpan * 52;
+                var remainginLifeIndays = lifeSpan * 365;
+                console.log("You have " + remainginLifeIndays + " days, " + remainginLifeInweeks + " weeks, and " + remainginLifeInMonths + " months left.");
+        }
+        
+
+
+
+
+        // Exercise 7 END
+
     </script>
   </body>
 </html>
