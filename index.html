@@ -115,10 +115,22 @@
                         return "Your BMI is " + bmi + ", so you are underweight.";
                 }
 }
-
         // Exercise 10 END
 //-----------------------------------------------------------------------------------------------------------
-        // Exercise 11 START = 
+        // Exercise 11 START = Leap year 
+        function isLeap(year) {
+                if (year % 4 !== 0) {
+                        return "Not leap year.";
+                } else if (year % 4 == 0 && year % 100 !== 0) {
+                        return "Leap year.";
+                } else if (year % 4 == 0 && year % 100 == 0 && year % 400 !== 0) {
+                        return "Not leap year.";
+                } else if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
+                        return "Leap year.";
+                }            
+        }
+
+
 
         // Exercise 11 END
 //-----------------------------------------------------------------------------------------------------------
