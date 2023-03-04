@@ -86,10 +86,16 @@
         // Exercise 8 END
 //-----------------------------------------------------------------------------------------------------------
         // Exercise 9 START = Love calculator
-        var rng = Math.random();
-        rng = rng * 100;
-        rng = Math.floor(rng) + 1;
-        console.log(rng)
+        var name1 = prompt("What's your name? ")
+        var name2 = prompt("What's the crushes name? ")
+        alert("You have a " + love() + "% chance of love working out!")
+        function love(){
+                var rng = Math.random();
+                rng = rng * 100;
+                rng = Math.floor(rng) + 1;
+                return rng;
+        }
+        
 
 
 
