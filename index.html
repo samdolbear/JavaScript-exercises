@@ -88,7 +88,13 @@
         // Exercise 9 START = Love calculator
         var name1 = prompt("What's your name? ")
         var name2 = prompt("What's the crushes name? ")
-        alert("You have a " + love() + "% chance of love working out!")
+        if ((rng = love()) > 70) {
+                alert("You have " + rng + "% love strength it's gonna work out!");
+        } else {
+                alert("You have a " + rng + "% chance of love working out!");
+        }
+
+        // alert("You have a " + love() + "% chance of love working out!")
         function love(){
                 var rng = Math.random();
                 rng = rng * 100;
@@ -96,6 +102,7 @@
                 return rng;
         }
         
+
 
 
 
