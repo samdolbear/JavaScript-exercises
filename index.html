@@ -86,31 +86,42 @@
         // Exercise 8 END
 //-----------------------------------------------------------------------------------------------------------
         // Exercise 9 START = Love calculator
-        var name1 = prompt("What's your name? ")
-        var name2 = prompt("What's the crushes name? ")
-        if ((rng = love()) > 70) {
-                alert("You have " + rng + "% love strength it's gonna work out!");
-        } else {
-                alert("You have a " + rng + "% chance of love working out!");
-        }
+        // var name1 = prompt("What's your name? ")
+        // var name2 = prompt("What's the crushes name? ")
+        // if ((rng = love()) > 70) {
+        //         alert("You have " + rng + "% love strength it's gonna work out!");
+        // } else {
+        //         alert("You have a " + rng + "% chance of love working out!");
+        // }
 
-        // alert("You have a " + love() + "% chance of love working out!")
-        function love(){
-                var rng = Math.random();
-                rng = rng * 100;
-                rng = Math.floor(rng) + 1;
-                return rng;
-        }
-        
-
-
-
-
-
+        // // alert("You have a " + love() + "% chance of love working out!")
+        // function love(){
+        //         var rng = Math.random();
+        //         rng = rng * 100;
+        //         rng = Math.floor(rng) + 1;
+        //         return rng;
+        // }
         // Exercise 9 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 10 START = bmi 2
+        function bmiCalculator (weight, height) {
+                var bmi = weight / Math.pow(height, 2);
+                bmi =  Math.round(bmi);
+                if (bmi >= 25) {
+                        return "Your BMI is " + bmi + ", so you are overweight.";
+                } else if (bmi >= 18.5 && bmi < 25) {
+                        return "Your BMI is " + bmi + ", so you have a normal weight.";
+                } else {
+                        return "Your BMI is " + bmi + ", so you are underweight.";
+                }
+}
 
+        // Exercise 10 END
+//-----------------------------------------------------------------------------------------------------------
+        // Exercise 11 START = 
 
-
+        // Exercise 11 END
+//-----------------------------------------------------------------------------------------------------------
     </script>
   </body>
 </html>
