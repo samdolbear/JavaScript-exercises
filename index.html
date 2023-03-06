@@ -185,20 +185,56 @@
       // https://www.99-bottles-of-beer.net/lyrics.html
       function beer() {
         var i = 99;
-        while(i >= 2) {
-          console.log(i + " bottles of beer on the wall, " + i + " bottles of beer.");
+        while (i >= 2) {
+          console.log(
+            i + " bottles of beer on the wall, " + i + " bottles of beer."
+          );
           i--;
-          console.log("Take one down and pass it around, " + i + " bottles of beer on the wall.");
+          console.log(
+            "Take one down and pass it around, " +
+              i +
+              " bottles of beer on the wall."
+          );
         }
-        while(i == 1) {
-          console.log(i + " bottle of beer on the wall, " + i + " bottle of beer.");
+        while (i == 1) {
+          console.log(
+            i + " bottle of beer on the wall, " + i + " bottle of beer."
+          );
           i--;
-          console.log("Take one down and pass it around, no more bottles of beer on the wall.");
+          console.log(
+            "Take one down and pass it around, no more bottles of beer on the wall."
+          );
         }
         return "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.";
       }
-    
       // Exercise 15 END
+      //-----------------------------------------------------------------------------------------------------------
+      // Exercise 16 START = Fibonacci
+      // Goal = output array of the fib sequence of size n
+      // define initial array
+      // is n=1? out 0
+      // is n=2 out 1
+      // for n > 2 sum precious 2 up to limit
+      // push each iteration to array
+      // output array to console
+
+      function fibonacci(n) {
+        var sequence = [];
+        if (n == 1) {
+          sequence.push(0);
+        } else if (n == 2) {
+          sequence.push(...[0, 1]);
+        } else if (n >= 3) {
+          sequence = [0, 1];
+          for (var i = 2; i <= n; i++) {
+            var sum = sequence[i - 1] + sequence[i - 2];
+            sequence.push(sum);
+          }
+        }
+        return sequence;
+      }
+
+      // Exercise 16 END
     </script>
   </body>
 </html>
