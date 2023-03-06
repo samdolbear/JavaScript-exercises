@@ -142,20 +142,24 @@
       // Exercise 12 END
       //-----------------------------------------------------------------------------------------------------------
       // Exercise 13 START = FizzBuzz
+
+      // Then add in a while loop
       var output = [];
       var count = 1;
       function fizzbuzz() {
-        if (count % 3 === 0 && count % 5 === 0) {
-          output.push("FizzBuzz");
-        } else if (count % 3 === 0) {
-          output.push("Fizz");
-        } else if (count % 5 === 0) {
-          output.push("Buzz");
-        } else {
-          output.push(count);
+        while (count <= 100) {
+          if (count % 3 === 0 && count % 5 === 0) {
+            output.push("FizzBuzz");
+          } else if (count % 3 === 0) {
+            output.push("Fizz");
+          } else if (count % 5 === 0) {
+            output.push("Buzz");
+          } else {
+            output.push(count);
+          }
+          console.log(output);
+          count++;
         }
-        console.log(output);
-        count++;
       }
       // Exercise 13 END
       //-----------------------------------------------------------------------------------------------------------
@@ -169,12 +173,16 @@
       // return the object in that poosition as the one who is paying etc
 
       function whosPaying() {
-      var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-      var rng = Math.floor(Math.random() * names.length);
-      var payer = names[rng];
-      return payer + " is going to buy launch today!";
-    }
+        var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+        var rng = Math.floor(Math.random() * names.length);
+        var payer = names[rng];
+        return payer + " is going to buy launch today!";
+      }
       // Exercise 14
+      //-----------------------------------------------------------------------------------------------------------
+      // Exercise 15 START =
+
+      // Exercise 15 END
     </script>
   </body>
 </html>
