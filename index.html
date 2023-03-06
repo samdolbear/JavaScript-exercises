@@ -160,15 +160,20 @@
       // Exercise 13 END
       //-----------------------------------------------------------------------------------------------------------
       // Exercise 14 START = Who's paying?
-      function whosPaying(names) {}
+
       // Select random name from list of names
       // person selected pays the bill
       // No console log or alert do it like the exercise 11
-
       // Make array with names
       // rng for population of array which will then be the position we select
       // return the object in that poosition as the one who is paying etc
 
+      function whosPaying() {
+      var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+      var rng = Math.floor(Math.random() * names.length);
+      var payer = names[rng];
+      return payer + " is going to buy launch today!";
+    }
       // Exercise 14
     </script>
   </body>
